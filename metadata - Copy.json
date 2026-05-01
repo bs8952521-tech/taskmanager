@@ -1,0 +1,6 @@
+{
+  "name": "TaskManager",
+  "description": "Production-ready Team Task Manager web application with RBAC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
