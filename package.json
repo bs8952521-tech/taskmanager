@@ -2,11 +2,10 @@
   "name": "react-example",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "postinstall": "prisma generate",
     "dev": "tsx server.ts",
-    "build": "vite build && esbuild server.ts --bundle --platform=node --outdir=dist --external:fsevents --external:@prisma/client",
+    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --outdir=dist --external:fsevents --external:@prisma/client",
     "start": "node dist/server.js",
     "preview": "vite preview",
     "clean": "rm -rf dist",
